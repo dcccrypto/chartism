@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chartism: The Cult of the Candle</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Runtime env variables injected via env-config.js -->
+  <script src="env-config.js"></script>
+</head>
+<body>
+  <!-- ================= HERO ================= -->
+  <header id="hero" class="hero">
+    <h1>Chartism: <span class="accent">The Cult of the Candle</span></h1>
+    <p class="tagline">The chart doesn't lie. Only traders do.</p>
+    <a href="#trinity" class="btn primary">Enter the Temple</a>
+
+    <!-- Contract address display & copy -->
+    <p class="ca-line"><span id="ca-display"></span>
+      <button id="copy-ca" class="btn copy-btn">Copy CA</button>
+    </p>
+
+    <!-- Join X community -->
+    <a href="https://x.com/i/communities/1941077102863720723" target="_blank" class="btn secondary small">Join X Community</a>
+  </header>
+
+  <!-- ============== LIVE STATS ============== -->
+  <section id="stats" class="section stats">
+    <h2 class="section-title">Live Candle Stats</h2>
+    <div class="card-grid">
+      <article class="card stat-card">
+        <h3>Price</h3>
+        <span id="price-value" class="stat-value">—</span>
+      </article>
+      <article class="card stat-card">
+        <h3>Market Cap</h3>
+        <span id="mc-value" class="stat-value">—</span>
+      </article>
+      <article class="card stat-card">
+        <h3>24h Volume</h3>
+        <span id="volume-value" class="stat-value">—</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============== THE SACRED TRINITY ============== -->
+  <section id="trinity" class="section trinity">
+    <h2 class="section-title">The Sacred Trinity</h2>
+    <div class="card-grid">
+      <article class="card">
+        <img src="img/chart.svg" alt="The Chart icon" />
+        <h3>The Chart <small>(Divine Scroll)</small></h3>
+        <ul>
+          <li>Bears &amp; bulls inked in sacred lines</li>
+          <li>Future whispered in Fibonacci</li>
+          <li>One candle to rule them all 📈</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <img src="img/sniper.svg" alt="The Sniper icon" />
+        <h3>The Sniper <small>(Chosen Ones)</small></h3>
+        <ul>
+          <li>Zero-slippage headshots 🎯</li>
+          <li>Patience of a meditating monk</li>
+          <li>Exit before the choir sings</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <img src="img/bundle.svg" alt="The Bundle icon" />
+        <h3>The Bundle <small>(Liquidity Ritual)</small></h3>
+        <ul>
+          <li>Sloshing tides of sacred SOL</li>
+          <li>Offerings poured into the altar</li>
+          <li>All spreads made whole again</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============== MEME-FAITH CHEATSHEET ============== -->
+  <section id="cheatsheet" class="section cheatsheet">
+    <h2 class="section-title">Meme-Faith Cheatsheet</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr><th>Crypto Concept</th><th>Cult Lore</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Volume</td><td>Lifeblood</td></tr>
+          <tr><td>Liquidity</td><td>Altar</td></tr>
+          <tr><td>Market Cap</td><td>Divine Aura</td></tr>
+          <tr><td>Red Candle</td><td>Trial by Fire</td></tr>
+          <tr><td>Green Candle</td><td>Holy Ascension</td></tr>
+          <tr><td>Jeets</td><td>Blasphemers</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============== RANKS OF THE FAITHFUL ============== -->
+  <section id="ranks" class="section ranks">
+    <h2 class="section-title">Ranks of the Faithful</h2>
+    <ol class="rank-list">
+      <li>Candle Acolyte 🔰</li>
+      <li>Wick Whisperer 🌬️</li>
+      <li>Trend Templar ✝️</li>
+      <li>Liquidity Monk 💧</li>
+      <li>Chart Cardinal 📜</li>
+      <li>Sniper Saint 🎯</li>
+      <li>Chart Pope 🛕</li>
+    </ol>
+  </section>
+
+  <!-- ============== DAILY RITUALS ============== -->
+  <section id="rituals" class="section rituals">
+    <h2 class="section-title">Daily Rituals</h2>
+    <ul class="timeline">
+      <li>
+        <span class="time">☀️ Dawn</span>
+        <span class="event">Morning Meditation — greet the first candle</span>
+      </li>
+      <li>
+        <span class="time">🔪 Noon</span>
+        <span class="event">Noon Sacrifice — slay a losing bag</span>
+      </li>
+      <li>
+        <span class="time">📢 Dusk</span>
+        <span class="event">Evening Sermon — preach the trend</span>
+      </li>
+      <li>
+        <span class="time">🌙 Midnight</span>
+        <span class="event">Night Confession — repent your FOMO</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============== JOIN ============== -->
+  <section id="join" class="section join">
+    <h2 class="section-title">Join the Pilgrimage</h2>
+    <div class="social-links">
+      <a href="https://x.com/i/communities/1941077102863720723" target="_blank" class="social">
+        <img src="img/twitter.svg" alt="X (Twitter)" /> X (Twitter)
+      </a>
+      <a href="https://dexscreener.com/" target="_blank" class="social">
+        <img src="img/dex.svg" alt="Dex Screener" /> Dex Screener
+      </a>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <p>For entertainment only. Not financial advice. Praise the candle responsibly.</p>
+  </footer>
+
+  <!-- Optional tiny JS for smooth scroll & candle flicker -->
+  <script>
+    // Retrieve CA from env-config.js (window._env_.CA)
+    const CONTRACT_ADDRESS = (window._env_ && window._env_.CA) || 'N/A';
+    document.getElementById('ca-display').textContent = `CA: ${CONTRACT_ADDRESS}`;
+
+    // Smooth scroll for the CTA
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Copy CA logic
+    document.getElementById('copy-ca').addEventListener('click', () => {
+      navigator.clipboard.writeText(CONTRACT_ADDRESS).then(() => {
+        const btn = document.getElementById('copy-ca');
+        const original = btn.textContent;
+        btn.textContent = 'Copied!';
+        setTimeout(() => (btn.textContent = original), 1500);
+      });
+    });
+
+    // Fetch live stats from Dexscreener
+    function fetchStats() {
+      if (!CONTRACT_ADDRESS || CONTRACT_ADDRESS === 'N/A') return;
+      fetch(`https://api.dexscreener.com/tokens/v1/solana/${CONTRACT_ADDRESS}`)
+        .then(r => r.json())
+        .then(json => {
+          const data = Array.isArray(json) ? json[0] : json;
+          if (!data) return;
+          const price = parseFloat(data.priceUsd).toFixed(8);
+          const marketCap = Number(data.marketCap || 0).toLocaleString();
+          const volume24 = Number(data.volume?.h24 || 0).toLocaleString();
+
+          document.getElementById('price-value').textContent = `$${price}`;
+          document.getElementById('mc-value').textContent = `$${marketCap}`;
+          document.getElementById('volume-value').textContent = `$${volume24}`;
+        })
+        .catch(err => console.error('Dexscreener fetch error', err));
+    }
+
+    fetchStats();
+    // refresh every 60 seconds
+    setInterval(fetchStats, 60000);
+  </script>
+</body>
+</html> 
