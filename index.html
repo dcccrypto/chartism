@@ -43,6 +43,12 @@
     </div>
   </section>
 
+  <!-- ============== LIVE CHART ============== -->
+  <section id="chart" class="section chart">
+    <h2 class="section-title">Live DexScreener Chart</h2>
+    <div id="dex-chart-container" class="chart-container"></div>
+  </section>
+
   <!-- ============== THE SACRED TRINITY ============== -->
   <section id="trinity" class="section trinity">
     <h2 class="section-title">The Sacred Trinity</h2>
@@ -203,6 +209,38 @@
     fetchStats();
     // refresh every 60 seconds
     setInterval(fetchStats, 60000);
+
+    // -------- DexScreener Chart Embed --------
+    function loadDexChart() {
+      if (!CONTRACT_ADDRESS || CONTRACT_ADDRESS === 'N/A') return;
+      const chainId = 'solana'; // update if your token lives on another chain
+      const url = `https://dexscreener.com/${chainId}/${CONTRACT_ADDRESS}?embed=1&theme=dark`;
+      const container = document.getElementById('dex-chart-container');
+      if (!container) return;
+      const iframe = document.createElement('iframe');
+      iframe.src = url;
+      iframe.loading = 'lazy';
+      iframe.style.width = '100%';
+      iframe.style.height = '100%';
+      iframe.style.border = 'none';
+      container.appendChild(iframe);
+    }
+    loadDexChart();
+
+    // -------- Scroll-reveal animations --------
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.section').forEach(sec => {
+      sec.classList.add('hidden');
+      observer.observe(sec);
+    });
   </script>
 </body>
 </html> 
